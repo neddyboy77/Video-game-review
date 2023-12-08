@@ -1,0 +1,43 @@
+version: "3.9"
+services:
+  postgresql:
+    ports:
+      - "5432:5432"
+    env_file:
+      - ./.env
+    build:
+      context: ./postgresql
+      dockerfile: Dockerfile
+    container_name: postgresql
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: "always"
+  fastapi:
+    ports:
+      - "3030:3030"
+    env_file:
+      - ./.env
+    build:
+      context: ./fastapi
+      dockerfile: Dockerfile
+    volumes:
+      - ./fastapi:/usr/src/app
+    container_name: fastapi
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: "always"
+  react:
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./.env
+    build:
+      context: ./react
+      dockerfile: Dockerfile
+    volumes:
+      - ./react:/usr/src/app
+    container_name: react
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: "always"
+
