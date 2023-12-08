@@ -15,6 +15,8 @@ fastify.get("/", async function handler(request, reply) {
   return { Tommy: "nedow" };
 });
 
+// TODO: not accessible from browser
+
 // Run the server!
 const start = async () => {
   try {
