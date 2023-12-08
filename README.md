@@ -1,13 +1,11 @@
 # Video-game-review
 
-Big Tuna industries video game reviews
+Big Tuna industries video game reviews. Resume project that allows users to make personal reviews of games and find others that may peak their interest
 
 ## Authors:
 
-Tommy Nedow
-Jordan Mack
-
-Resume project that allows users to make personal reviews of games and find others that may peak their interest
+- Tommy Nedow
+- Jordan Mack
 
 ## Dependencies
 
