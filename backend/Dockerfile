@@ -4,7 +4,9 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-EXPOSE 3000
+ARG BACKEND_PORT
+
+EXPOSE $BACKEND_PORT
 
 ARG APP_ENV
 

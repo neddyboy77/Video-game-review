@@ -5,7 +5,9 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-EXPOSE 8080
+ARG PORT
+
+EXPOSE $PORT
 
 ARG APP_ENV
 
