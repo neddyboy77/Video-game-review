@@ -1,5 +1,6 @@
 {
   "name": "fastify",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -8,5 +9,8 @@
     "dev": "node --watch --inspect=0.0.0.0:9229 server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.24.3"
+  }
 }

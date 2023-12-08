@@ -12,32 +12,31 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     restart: "always"
-  fastapi:
+  fastify:
     ports:
       - "3030:3030"
     env_file:
       - ./.env
     build:
-      context: ./fastapi
+      context: ./fastify
       dockerfile: Dockerfile
     volumes:
-      - ./fastapi:/usr/src/app
-    container_name: fastapi
+      - ./fastify:/usr/src/app
+    container_name: fastify
     extra_hosts:
       - "host.docker.internal:host-gateway"
     restart: "always"
-  react:
+  frontend:
     ports:
       - "8080:8080"
     env_file:
       - ./.env
     build:
-      context: ./react
+      context: ./frontend
       dockerfile: Dockerfile
     volumes:
-      - ./react:/usr/src/app
+      - ./frontend:/usr/src/app
     container_name: react
     extra_hosts:
       - "host.docker.internal:host-gateway"
     restart: "always"
-

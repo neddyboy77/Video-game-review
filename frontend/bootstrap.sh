@@ -6,6 +6,6 @@ if [ -f package.json ]; then
             npm run start
     else
             npm install
-            npm run dev
+            npm run start
     fi
 fi
