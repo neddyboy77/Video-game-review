@@ -2,14 +2,14 @@
 
 Big Tuna industries video game reviews
 
-Authors:
+## Authors:
 
 Tommy Nedow
 Jordan Mack
 
 Resume project that allows users to make personal reviews of games and find others that may peak their interest
 
-How to start project:
+## How to start project:
 
 1. Create `.env` file by copying `.env.example`, renaming it to `.env` and filling out the empty variables with desired content
 
