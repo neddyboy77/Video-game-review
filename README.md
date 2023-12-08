@@ -9,6 +9,14 @@ Jordan Mack
 
 Resume project that allows users to make personal reviews of games and find others that may peak their interest
 
+## Dependencies
+
+- Docker and docker compose (https://docs.docker.com/engine/install/ubuntu/)
+
+## Recommended
+
+- Visual studio code
+
 ## How to start project:
 
 1. Create `.env` file by copying `.env.example`, renaming it to `.env` and filling out the empty variables with desired content
