@@ -5,7 +5,7 @@
   "editor.formatOnSave": true,
   // tell the ESLint plugin to run on save
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   // set tab size to 2 spaces
   "editor.tabSize": 2
