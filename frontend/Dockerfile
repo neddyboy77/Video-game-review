@@ -1,4 +1,6 @@
-FROM node:18
+# get amd64 node image
+
+FROM node:18-alpine
 
 # Set the working directory to /app
 WORKDIR /usr/src/app
